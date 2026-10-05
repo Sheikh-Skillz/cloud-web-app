@@ -142,9 +142,67 @@ Create security group
 
 
 
+Step 3 — Create the Target Group and ALB
+3A. Create the Target Group
+
+In the EC2 console, find:
+
+Load Balancing → Target Groups
+
+Click:
+
+Create target group
+
+Choose target type
+
+Select:
+
+Instances
+
+Click Next.
+
+Basic configuration
+
+Set:
+
+Target group name
+
+cloud-class-web-tg
+
+Protocol
+
+HTTP
+
+Port
+
+80
+
+For the VPC, select the same VPC used by your Launch Template.
+
+Health checks
+
+Leave:
+
+Health check protocol: HTTP
+
+Health check path:
+
+/
+
+Click:
+
+Next
+
+Click:
+
+Create target group
+
+![image alt](https://github.com/Sheikh-Skillz/cloud-web-app/blob/325c634043d9d3ce19680e1a14845a9e8bfa556e/create-target-group.png)
 
 
-![image alt]()
+
+
+
 
 
 
