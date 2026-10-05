@@ -38,7 +38,36 @@ t3.micro
 ![image alt](https://github.com/Sheikh-Skillz/cloud-web-app/blob/23e6175ba7a53e0328b5640b03808cf6217bb890/choose-the-AMI.png)
 
 
+Network settings
 
+Find Network settings.
+
+For Subnet, don't permanently select a specific subnet if you are going to use the Launch Template with an ASG across multiple AZs.
+
+Set:
+
+Subnet → Don't include in launch template
+
+We'll select the subnets when creating the ASG.
+
+For Firewall / Security groups, we'll create the EC2 security group first.
+
+Click Create security group if the console gives you that option.
+
+Use:
+
+Security group name
+cloud-web-ec2-sg
+
+Description
+Allow HTTP only from ALB
+
+For inbound rules, you'll eventually want:
+
+Type	Port	Source
+HTTP	80	ALB security group
+
+![image alt](https://github.com/Sheikh-Skillz/cloud-web-app/blob/c8716e886487edde86711f87116d32aefb531f43/create-ec2-security-group.png)
 
 
 
