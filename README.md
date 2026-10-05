@@ -70,5 +70,17 @@ HTTP	80	ALB security group
 ![image alt](https://github.com/Sheikh-Skillz/cloud-web-app/blob/c8716e886487edde86711f87116d32aefb531f43/create-ec2-security-group.png)
 
 
+Advanced details
+
+Scroll down and expand:
+
+Advanced details
+
+Find:
+
+User data
+
+Paste this:
+
 
 
