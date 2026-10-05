@@ -85,5 +85,68 @@ Paste this:
 ![image alt](https://github.com/Sheikh-Skillz/cloud-web-app/blob/0650c18b3f706f52d84d4289c5371d89872aae45/add-user-data.png)
 
 
+Create the template
+
+Scroll to the bottom and click:
+
+Create launch template
+
+You should now see:
+
+cloud-web-template
+
+in your Launch Templates list.
+
+
+
+This is called security-group chaining.
+
+2A. Create the ALB security group
+
+Go to:
+
+EC2 → Security Groups
+
+Click:
+
+Create security group
+
+Enter:
+
+Security group name
+cloud-web-alb-sg
+
+Description
+Allow public HTTP traffic to ALB
+
+Select your VPC.
+
+Under Inbound rules, click Add rule.
+
+Configure:
+
+Field	Value
+Type	HTTP
+Port	80
+Source	Anywhere-IPv4
+CIDR	0.0.0.0/0
+
+For outbound rules, leave the default:
+
+All traffic → 0.0.0.0/0
+
+Click:
+
+Create security group
+
+
+
+
+
+
+![image alt]()
+
+
+
 
 
