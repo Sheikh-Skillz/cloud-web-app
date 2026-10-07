@@ -343,6 +343,25 @@ Click:
 
 Next
 
+'
+'
+'
+'
+'
+'
+'
+'
+'
+'
+'
+'
+'
+
+
+![](https://github.com/Sheikh-Skillz/cloud-web-app/blob/6669d6d6b94cf112583abf85e200b46474bf6e96/welcome-to-cloud-class.png)
+
+
+
 
 
 
