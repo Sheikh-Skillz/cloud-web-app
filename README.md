@@ -201,6 +201,157 @@ Create target group
 
 
 
+Create the Application Load Balancer
+
+Go to:
+
+EC2 → Load Balancers
+
+Click:
+
+Create Load Balancer
+
+
+![](https://github.com/Sheikh-Skillz/cloud-web-app/blob/a50a9da1a79e3ca911d55954494f625b2453e358/create-application-load-balancer.png)
+
+You'll see several types.
+
+Select:
+
+Application Load Balancer
+
+Click:
+
+Create
+
+Basic configuration
+
+Load balancer name:
+
+cloud-class-alb
+
+Scheme:
+
+Internet-facing
+
+IP address type:
+
+IPv4
+
+Click Next.
+
+Network mapping
+
+Select your VPC.
+
+You need at least two Availability Zones.
+
+For example:
+
+Availability Zone A
+└── Public Subnet 1
+
+Availability Zone B
+└── Public Subnet 2
+
+Select the first AZ and its public subnet.
+
+Then select the second AZ and its public subnet.
+
+Important
+
+The ALB needs to be placed in public subnets because it needs to receive traffic from the Internet.
+
+You should see something similar to:
+
+AZ	Subnet
+...a	Public subnet A
+...b	Public subnet B
+
+Don't choose two subnets from the same AZ.
+
+![](https://github.com/Sheikh-Skillz/cloud-web-app/blob/a50a9da1a79e3ca911d55954494f625b2453e358/create-load-balancer-internet-facing.png)
+
+
+
+
+Security groups
+
+For Security groups, select:
+
+cloud-class-alb-sg
+
+Remove any automatically selected security group that you don't want the ALB using.
+
+Listener and routing
+
+Under Listeners and routing:
+
+Protocol: HTTP
+
+Port: 80
+
+For Default action, choose:
+
+Forward to
+
+cloud-class-web-tg
+
+Then click:
+
+Create load balancer
+
+AWS will take a little time to provision it.
+
+Wait until the ALB status becomes:
+
+Active
+
+Step 4 — Create the Auto Scaling Group
+
+Now we're going to connect everything.
+
+Go to:
+
+EC2 → Auto Scaling Groups
+
+Click:
+
+Create Auto Scaling group
+
+4A. Choose the Launch Template
+
+For Auto Scaling group name, enter:
+
+cloud-class-asg
+
+Under Launch template:
+
+Select:
+
+cloud-class-web-template
+
+Use the latest version.
+
+Click:
+
+Next
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
