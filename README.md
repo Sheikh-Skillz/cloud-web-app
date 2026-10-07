@@ -301,6 +301,9 @@ Then click:
 
 Create load balancer
 
+![](https://github.com/Sheikh-Skillz/cloud-web-app/blob/ef1508cf154d9c3edb0168fe9bfc8b6b8f3926fa/click-create-load-balancer.png)
+
+
 AWS will take a little time to provision it.
 
 Wait until the ALB status becomes:
@@ -318,6 +321,9 @@ EC2 → Auto Scaling Groups
 Click:
 
 Create Auto Scaling group
+
+![](https://github.com/Sheikh-Skillz/cloud-web-app/blob/ef1508cf154d9c3edb0168fe9bfc8b6b8f3926fa/create-auto-sacle-group.png)
+
 
 4A. Choose the Launch Template
 
